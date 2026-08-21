@@ -24,3 +24,7 @@ builds/specimens/_temp/
 
 # Local design archives / backups
 archive/
+
+# Local internal guides (not to be uploaded to Git)
+workflow_interno.md
+

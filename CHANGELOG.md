@@ -1,30 +1,29 @@
 # Changelog — LEM Pro
 
-Todos los cambios relevantes del proyecto se documentan en este archivo.
+Todos los cambios técnicos relevantes del desarrollo y compilación de la familia tipográfica se documentan en este archivo.
 
 ---
 
 ## [1.0.0] - 2026-08-21
 ### Added
-- **Versión Inicial:** Configuración inicial del repositorio para la familia **LEM Pro**.
-- **Estructura del Repositorio:** Creación de directorios estándar (`sources/`, `builds/`, `docs/`, `tests/`) siguiendo las mejores prácticas y el modelo organizativo de LEDS_Text.
-- **Fuentes Activas:** Incorporación del archivo fuente `LEM Pro.glyphs` (Glyphs v3) con un total de 954 glifos.
-- **Estilos de Producción:** Publicación de 4 estilos compilados (OTF) en `builds/otf/proof/`:
-  - **Light** (300)
-  - **Regular** (400)
-  - **SemiBold** (600)
-  - **ExtraBold** (800)
-- **Documentación Técnica:** Creación de las guías de contexto, nomenclatura y flujo de trabajo en la carpeta `docs/`.
+- **Inicialización del Repositorio:** Configuración inicial del control de versiones y del repositorio siguiendo la estructura estándar para el desarrollo tipográfico.
+- **Archivo Fuente (Design Source):** Incorporación del archivo de diseño master `LEM Pro.glyphs` (versión Glyphs 3) con soporte para interpolación y un set completo de 954 glifos.
+- **Compilación de Instancias Estáticas (OTF/CFF):** Exportación inicial de los 4 estilos estáticos de la familia tipográfica en `builds/otf/proof/`:
+  - **Light** (Weight Class 300)
+  - **Regular** (Weight Class 400)
+  - **SemiBold** (Weight Class 600)
+  - **ExtraBold** (Weight Class 800)
+- **Documentación Técnica del Proyecto:** Creación de las guías de contexto histórico, flujo de trabajo de desarrollo y convenciones de nomenclatura para la tabla `name`.
 
-### Font Metrics Summary
+### Font Metrics Summary (Resumen Métrico)
 **Family Name:** "LEM Pro"
 - **Units Per Em (UPM):** 1024
-- **Number of Glyphs:** 954
-- **Version:** 1.0; Glyphs 3.x
-- **Axes:** Weight (wght) - 300 a 800
+- **Number of Glyphs (Glyph Count):** 954
+- **Version:** 1.000; Glyphs 3.x
+- **Axes:** Weight (`wght`: 300-800)
 
-#### Styles Overview
-- **Light (300)** (PostScript: `LEMProLight`)
-- **Regular (400)** (PostScript: `LEMProRegular`)
-- **SemiBold (600)** (PostScript: `LEMProSemiBold`)
-- **ExtraBold (800)** (PostScript: `LEMProExtraBold`)
+#### Styles Overview (PostScript Names)
+- **Light (300):** `LEMProLight`
+- **Regular (400):** `LEMProRegular`
+- **SemiBold (600):** `LEMProSemiBold`
+- **ExtraBold (800):** `LEMProExtraBold` (Estilo asignado para vinculación negrita / *Style Linking*).

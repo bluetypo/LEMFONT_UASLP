@@ -1,87 +1,63 @@
 # Nomenclatura — LEM Pro
 
-Este documento define las convenciones de naming oficiales para la familia tipográfica del **Laboratorio de Experimentación Multimedia**.
-
-Su objetivo es garantizar coherencia entre:
-- Metadata interna (Font Info / Tabla `name`)
-- Archivos exportados (.otf, .woff2)
-- Compatibilidad en sistemas operativos (Windows / macOS)
-- Estructura del repositorio y comunicación del LEM.
+Este documento define la estructura de metadatos y las convenciones de nomenclatura de la tabla `name` (especificación OpenType) para garantizar la compatibilidad multiplataforma (macOS, Windows, Linux) y el agrupamiento correcto de los estilos en los menús de aplicaciones de diseño (Adobe, Figma) y de oficina (Microsoft Word, Google Docs).
 
 ---
 
-## 1. Family Name
+## 1. Agrupamiento de Familia (Family Naming)
 
-**Family Name oficial:** `LEM Pro` (para visualización en menús)  
-**Filenames y PostScript Name base:** `LEMPro` (sin espacios para evitar errores en servidores y código).
+Para evitar problemas de fragmentación en los menús y asegurar que los estilos aparezcan agrupados bajo una misma familia:
 
-Este nombre debe mantenerse idéntico en todos los estilos para asegurar el agrupamiento correcto.
-
----
-
-## 2. Style Names & Metrics
-
-| Estilo      | Style Name | Weight Class | Width Class |
-|-------------|------------|--------------|-------------|
-| **Light** | Light      | 300          | 5 (Medium)  |
-| **Regular** | Regular    | 400          | 5 (Medium)  |
-| **SemiBold** | SemiBold   | 600          | 5 (Medium)  |
-| **ExtraBold** | ExtraBold  | 800          | 5 (Medium)  |
+* **Family Name (ID 16 - Typographic Family Name):** `LEM Pro`
+  - Nombre completo que agrupa a todos los estilos en menús extendidos.
+* **Subfamily Name (ID 17 - Typographic Subfamily Name):** `Light` | `Regular` | `SemiBold` | `ExtraBold`
+  - Identifica el peso individual de la fuente en menús extendidos.
+* **Font Family Name (ID 1 - Family Name):** `LEM Pro`
+  - Utilizado para compatibilidad en aplicaciones básicas que solo admiten un modelo de cuatro estilos (Regular, Italic, Bold, Bold Italic). 
 
 ---
 
-## 3. Style Linking (Vinculación de Estilos)
+## 2. Definición de Instancias (Styles & Weights)
 
-Para asegurar que el uso de las teclas rápidas (**B** / **I**) funcione correctamente en software de oficina y diseño:
+La consistencia en la codificación de pesos se define a través de los valores de la tabla `OS/2` (`usWeightClass` y `usWidthClass`):
 
-**Regular (Base):**
-- Style Linking Family: `LEM Pro`
-- Style Linking Style: `Regular`
-
-**ExtraBold:**
-- Style Linking Family: `LEM Pro`
-- Style Linking Style: `Bold` (Vinculado a Regular en sistemas que sólo soportan Regular/Bold como par básico).
-
-**Light / SemiBold:**
-- Estos estilos no llevan vinculación directa de estilo básica (Style Linking) para evitar conflictos en menús de aplicaciones sencillas que sólo aceptan una variante base y una variante bold.
+| Estilo | Style Name (ID 2/17) | Weight Class (`usWeightClass`) | Width Class (`usWidthClass`) |
+| :--- | :--- | :---: | :---: |
+| **Light** | Light | 300 | 5 (Medium) |
+| **Regular** | Regular | 400 | 5 (Medium) |
+| **SemiBold** | SemiBold | 600 | 5 (Medium) |
+| **ExtraBold** | ExtraBold | 800 | 5 (Medium) |
 
 ---
 
-## 4. Naming para exportación (Archivos)
+## 3. Vinculación de Estilos (Style Linking)
 
-Formato oficial sin espacios para evitar errores en servidores y código. Los archivos se nombran exactamente de acuerdo a su PostScript Name + `.otf`:
+Para que el atajo de negrita (**B** / **Cmd+B**) funcione correctamente en procesadores de texto de oficina y navegadores web:
 
-- `LEMProLight.otf`
-- `LEMProRegular.otf`
-- `LEMProSemiBold.otf`
-- `LEMProExtraBold.otf`
-
-**Reglas:**
-- Sin números de versión en el nombre del archivo (ej. NO usar `LEMProRegular_v1.otf`).
-- La versión se controla exclusivamente mediante el `CHANGELOG.md` y la metadata interna.
-
----
-
-## 5. Versionado
-
-**Formato interno (Metadata):** `Version 1.000; Glyphs 3.x`
-
-**Convención de versión en Repositorio (Git Tags):**
-- `v1.0.0` (Lanzamiento inicial estable)
+* **Regular (Base):**
+  - Style Linking Family: `LEM Pro`
+  - Style Linking Style: *Ninguno* (es la base).
+* **ExtraBold (Bold):**
+  - Style Linking Family: `LEM Pro`
+  - Style Linking Style: `Bold` (Vinculado a `Regular`).
+  - Al presionar **B** sobre un texto en `LEM Pro Regular`, el sistema cambiará dinámicamente el glifo activo al master correspondiente en `LEMProExtraBold`.
+* **Light / SemiBold:**
+  - No llevan vinculación de estilo (Style Linking) para evitar conflictos en menús simplificados que no soportan pesos intermedios.
 
 ---
 
-## 6. PostScript Name (PS Name)
+## 4. PostScript Name (ID 6) y Naming de Archivo
 
-El nombre PostScript es crítico para la impresión y generación de PDF. No debe exceder los 29 caracteres y no debe contener espacios:
+El nombre PostScript es de vital importancia para la generación de PDFs y compatibilidad con RIPs de impresión. No debe superar los 29 caracteres, no contiene espacios y se utiliza exactamente para nombrar el archivo compilado final:
 
-- `LEMProLight`
-- `LEMProRegular`
-- `LEMProSemiBold`
-- `LEMProExtraBold`
+* **Light:** PS Name: `LEMProLight` $\rightarrow$ Archivo: `LEMProLight.otf`
+* **Regular:** PS Name: `LEMProRegular` $\rightarrow$ Archivo: `LEMProRegular.otf`
+* **SemiBold:** PS Name: `LEMProSemiBold` $\rightarrow$ Archivo: `LEMProSemiBold.otf`
+* **ExtraBold:** PS Name: `LEMProExtraBold` $\rightarrow$ Archivo: `LEMProExtraBold.otf`
 
 ---
 
-## 7. Coherencia Institucional
+## 5. Parámetros de Versión (ID 5)
 
-En publicaciones del Laboratorio, la fuente debe referirse siempre como **LEM Pro**.
+* **Metadata de Versión (ID 5):** `Version 1.000; Glyphs 3.x`
+* **Git Tags:** `v1.0.0`

@@ -1,30 +1,29 @@
 # Contexto del Proyecto: LEM Pro
 
 ## 1. Origen y Propósito
-**LEM Pro** es un proyecto de diseño tipográfico comisionado por el **Laboratorio de Experimentación Multimedia (LEM)** de la Facultad de Hábitat de la Universidad Autónoma de San Luis Potosí (UASLP). El objetivo principal es dotar al laboratorio de una voz visual y tipográfica propia que acompañe sus investigaciones, desarrollos multimedia y experimentos visuales.
+**LEM Pro** es un proyecto de diseño tipográfico comisionado por el **Laboratorio de Experimentación Multimedia (LEM)** de la Facultad de Hábitat de la Universidad Autónoma de San Luis Potosí (UASLP). El objetivo de este proyecto es dotar al laboratorio de una voz visual propia que resuelva los retos de legibilidad en pantallas de alta densidad de píxeles, piezas multimedia e interfaces de usuario avanzadas.
 
-El proyecto responde a la necesidad de contar con una tipografía institucional versátil, moderna y técnicamente robusta, optimizada para interactuar en interfaces digitales, diseño paramétrico y narrativas transmedia.
+El diseño parte de los modelos clásicos de las tipografías grotescas (sans-serif de finales del siglo XIX y principios del XX), reinterpretando sus proporciones con criterios contemporáneos de legibilidad digital.
 
-## 2. Identidad Institucional
-La tipografía busca alinearse con los pilares del LEM:
-- **Experimentación:** Una estructura dinámica y contemporánea.
-- **Transmedia:** Adaptabilidad en múltiples plataformas y soportes de salida.
-- **Colaboración:** Código abierto y flujo de trabajo documentado en GitHub.
+## 2. Identidad y Espacio de Diseño (Design Space)
+La tipografía refleja los valores experimentales del laboratorio mediante decisiones de diseño estructural:
+- **Estructura Dinámica:** Un sistema con un eje continuo de peso que permite la generación de infinitas instancias (pesos) mediante interpolación.
+- **Rigor Métrico:** Proporciones geométricas equilibradas con aberturas amplias y contraformas abiertas que aseguran la legibilidad en tamaños de lectura pequeños.
+- **Optimización Web:** Curvas PostScript optimizadas para una rasterización (*rendering*) uniforme en sistemas operativos modernos.
 
-## 3. Colaboraciones Especiales
-El desarrollo estructural y la dirección de este proyecto tipográfico ha contado con la participación de diseñadores del laboratorio bajo la supervisión de figuras clave del diseño tipográfico contemporáneo en la región, como **Manuel Guerrero**, aportando el rigor técnico que el espacio académico demanda.
+## 3. Asesoría y Supervisión Técnica
+El desarrollo técnico y estructural de esta familia tipográfica ha contado con la participación activa de diseñadores del laboratorio y la supervisión y consultoría de especialistas en diseño de tipos como **Manuel Guerrero**, aportando rigor técnico al dibujo de curvas, compatibilidad de contornos, espaciado y consistencia de anclas.
 
 ## 4. El Laboratorio (LEM)
-El Laboratorio de Experimentación Multimedia es un espacio de la Facultad del Hábitat de la UASLP dedicado al estudio, experimentación e investigación en narrativas digitales, usabilidad, percepción de la imagen y diseño asistido por tecnología.
-- **Institución:** Universidad Autónoma de San Luis Potosí (UASLP).
-- **Ubicación:** San Luis Potosí, S.L.P., México.
+El Laboratorio de Experimentación Multimedia (UASLP) es una entidad académica enfocada en la investigación aplicada en campos como la usabilidad digital, narrativa multimedia y el diseño paramétrico.
 
-## 5. Especificaciones de la Familia
-LEM Pro es un sistema tipográfico de amplio rango (Pro) que cuenta con **954 glifos**, ofreciendo soporte extendido para lenguas latinas occidentales y de Europa Central, así como funciones OpenType avanzadas.
-
-Actualmente consta de 4 pesos estáticos (Light, Regular, SemiBold, ExtraBold) y los parámetros preparados en su archivo fuente para una futura exportación variable.
+## 5. Especificaciones del Set de Glifos (Charset)
+LEM Pro cuenta con un set extendido de **954 glifos**, diseñado bajo estándares *Latin Pro*. Esto garantiza:
+- Cobertura completa de idiomas europeos de base latina (occidentales, bálticos, nórdicos y de Europa Central).
+- Implementación de diacríticos combinables mediante posicionamiento automático por anclas.
+- Funciones OpenType avanzadas (`kern`, `ccmp`, `liga`) que resuelven dinámicamente problemas de colisión glífica y composición de texto corrido.
 
 ## 6. Objetivos del Repositorio
-Este repositorio en GitHub funciona como:
-1. **Control de Versiones y Calidad:** Espacio para gestionar cambios en las fuentes activas y compilaciones.
-2. **Repositorio de Producción:** Punto de distribución oficial de las fuentes para uso interno y colaborativo del laboratorio.
+Este espacio en GitHub gestiona el control de calidad mediante:
+1. **Validación de Métricas:** Ajustes en zonas de alineación, alturas de x y versalitas.
+2. **Distribución de Producción:** Publicación estructurada de instancias estáticas listas para el usuario final.
