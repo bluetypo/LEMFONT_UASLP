@@ -1,9 +1,7 @@
 {
-.appVersion = "4004";
+.appVersion = "3436";
 .formatVersion = 3;
 DisplayStrings = (
-"01234567890
-/zero.osf/one.osf/two.osf/three.osf/four.osf/five.osf/six.osf/seven.osf/eight.osf/nine.osf x",
 "/LEMVar_alt"
 );
 axes = (
@@ -510,7 +508,7 @@ wght = {
 };
 }
 );
-date = "2026-08-21 14:33:13 +0000";
+date = "2026-08-22 02:05:13 +0000";
 familyName = "LEM Pro";
 featurePrefixes = (
 {
@@ -11260,7 +11258,8 @@ unicode = 360;
 },
 {
 glyphname = V;
-lastChange = "2025-08-02 22:43:23 +0000";
+kernRight = A;
+lastChange = "2026-08-22 01:57:50 +0000";
 layers = (
 {
 anchors = (
@@ -11336,7 +11335,8 @@ unicode = 86;
 },
 {
 glyphname = W;
-lastChange = "2025-08-02 22:43:23 +0000";
+kernRight = A;
+lastChange = "2026-08-22 01:57:40 +0000";
 layers = (
 {
 anchors = (
@@ -11656,7 +11656,8 @@ unicode = 88;
 },
 {
 glyphname = Y;
-lastChange = "2025-08-02 22:43:23 +0000";
+kernRight = A;
+lastChange = "2026-08-22 01:58:16 +0000";
 layers = (
 {
 anchors = (
@@ -13377,7 +13378,8 @@ unicode = 273;
 },
 {
 glyphname = e;
-lastChange = "2025-08-02 22:43:23 +0000";
+kernLeft = A;
+lastChange = "2026-08-22 01:57:10 +0000";
 layers = (
 {
 anchors = (
@@ -17122,7 +17124,8 @@ unicode = 357;
 },
 {
 glyphname = u;
-lastChange = "2025-08-02 22:43:23 +0000";
+kernLeft = A;
+lastChange = "2026-08-22 01:56:47 +0000";
 layers = (
 {
 anchors = (
@@ -33017,6 +33020,7 @@ name = "Axis Values";
 value = "ital; 0.0>1.0=Roman*";
 }
 );
+exports = 0;
 name = Regular;
 properties = (
 {
@@ -33205,6 +33209,31 @@ value = "LEMPro ExtraBold";
 weightClass = 800;
 }
 );
+kerningLTR = {
+m004 = {
+"@MMK_L_A" = {
+"@MMK_R_A" = -70;
+adieresis = -70;
+g = -70;
+o = -70;
+odieresis = -70;
+p = -70;
+r = -70;
+};
+V = {
+e = -70;
+};
+W = {
+e = -70;
+s = -70;
+};
+Y = {
+"@MMK_R_A" = -70;
+a = -70;
+s = -70;
+};
+};
+};
 metrics = (
 {
 type = ascender;
