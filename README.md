@@ -5,13 +5,15 @@
 Este repositorio aloja los archivos fuente de diseño y las compilaciones de producción de la familia, estructurados bajo estándares profesionales de desarrollo tipográfico y control de versiones.
 
 ## Estructura de la Familia (Uprights - v1.0.0)
-La familia se compone actualmente de **4 pesos estáticos**, generados a partir de un eje continuo de interpolación de peso (`wght`):
+La familia se compone actualmente de **6 pesos estáticos**, generados a partir de un eje continuo de interpolación de peso (`wght`):
 
 | Estilo / Instancia | Upright | Italic | Weight Class | PostScript Name |
 | :--- | :---: | :---: | :---: | :--- |
 | **Light** | ✓ | - | 300 | `LEMProLight` |
 | **Regular** | ✓ | - | 400 | `LEMProRegular` |
+| **Medium** | ✓ | - | 500 | `LEMProMedium` |
 | **SemiBold** | ✓ | - | 600 | `LEMProSemiBold` |
+| **Bold** | ✓ | - | 700 | `LEMProBold` |
 | **ExtraBold** | ✓ | - | 800 | `LEMProExtraBold` |
 
 ## Especificaciones Técnicas (Font Specs)
@@ -28,12 +30,12 @@ Las instancias OTF listas para pruebas de rendimiento y QA se ubican en:
 
 ## Sobre el Laboratorio
 El Laboratorio de Experimentación Multimedia (LEM) es un espacio multidisciplinario de la UASLP enfocado en el diseño paramétrico, la percepción visual y la experimentación digital.
-🌐 [Visita el sitio oficial de la Facultad del Hábitat](https://habitat.uaslp.mx)
+🌐 [Visita el sitio oficial del Laboratorio de Experimentación Multimedia](https://lem.uaslp.mx)
 
 ---
 
 ## Pruebas de Rendering y QA
-1. Descarga las fuentes compiladas desde `builds/otf/proof/`.
+1. Descarga las fuentes compiladas desde `builds/otf/release/`.
 2. Instala los estilos en tu sistema operativo o gestor de fuentes.
 3. Para validar la vinculación de estilos (*Style Linking*), comprueba que la variante `ExtraBold` responda correctamente al atajo de teclado negrita (**B** / **N**) cuando se selecciona el estilo `Regular` en software compatible.
 
