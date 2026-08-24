@@ -64576,6 +64576,31 @@ instanceInterpolations = {
 "81A831B5-50AA-4849-970C-E043D56D8FCB" = 1;
 };
 name = Light;
+properties = (
+{
+key = postscriptFontName;
+value = LEMProLight;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Light";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
+weightClass = 300;
 },
 {
 axesValues = (
@@ -64586,6 +64611,30 @@ instanceInterpolations = {
 m004 = 0.2;
 };
 name = Regular;
+properties = (
+{
+key = postscriptFontName;
+value = LEMProRegular;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Regular";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 },
 {
 axesValues = (
@@ -64596,6 +64645,30 @@ instanceInterpolations = {
 m004 = 0.4;
 };
 name = Medium;
+properties = (
+{
+key = postscriptFontName;
+value = LEMProMedium;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Medium";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 weightClass = 500;
 },
 {
@@ -64607,6 +64680,30 @@ instanceInterpolations = {
 m004 = 0.6;
 };
 name = SemiBold;
+properties = (
+{
+key = postscriptFontName;
+value = LEMProSemiBold;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro SemiBold";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 weightClass = 600;
 },
 {
@@ -64618,6 +64715,30 @@ instanceInterpolations = {
 m004 = 0.8;
 };
 name = Bold;
+properties = (
+{
+key = postscriptFontName;
+value = LEMProBold;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Bold";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 weightClass = 700;
 },
 {
@@ -64628,6 +64749,30 @@ instanceInterpolations = {
 m004 = 1;
 };
 name = ExtraBold;
+properties = (
+{
+key = postscriptFontName;
+value = LEMProExtraBold;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro ExtraBold";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 },
 {
 axesValues = (
@@ -64660,6 +64805,30 @@ instanceInterpolations = {
 isItalic = 1;
 linkStyle = Light;
 name = "Light Italic";
+properties = (
+{
+key = postscriptFontName;
+value = LEMProLightItalic;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Light Italic";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 },
 {
 axesValues = (
@@ -64693,6 +64862,30 @@ m004 = 0.2;
 isItalic = 1;
 linkStyle = Regular;
 name = "Regular Italic";
+properties = (
+{
+key = postscriptFontName;
+value = LEMProRegularItalic;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Regular Italic";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 },
 {
 axesValues = (
@@ -64726,6 +64919,30 @@ m004 = 0.4;
 isItalic = 1;
 linkStyle = Medium;
 name = "Medium Italic";
+properties = (
+{
+key = postscriptFontName;
+value = LEMProMediumItalic;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Medium Italic";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 weightClass = 500;
 },
 {
@@ -64760,6 +64977,30 @@ m004 = 0.6;
 isItalic = 1;
 linkStyle = SemiBold;
 name = "SemiBold Italic";
+properties = (
+{
+key = postscriptFontName;
+value = LEMProSemiBoldItalic;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro SemiBold Italic";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 weightClass = 600;
 },
 {
@@ -64795,6 +65036,30 @@ isBold = 1;
 isItalic = 1;
 linkStyle = Regular;
 name = "Bold Italic";
+properties = (
+{
+key = postscriptFontName;
+value = LEMProBoldItalic;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro Bold Italic";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 weightClass = 700;
 },
 {
@@ -64828,6 +65093,30 @@ m004 = 1;
 isItalic = 1;
 linkStyle = ExtraBold;
 name = "ExtraBold Italic";
+properties = (
+{
+key = postscriptFontName;
+value = LEMProExtraBoldItalic;
+},
+{
+key = postscriptFullNames;
+values = (
+{
+language = ENG;
+value = "LEMPro ExtraBold Italic";
+}
+);
+},
+{
+key = styleMapFamilyNames;
+values = (
+{
+language = dflt;
+value = "LEM Pro";
+}
+);
+}
+);
 }
 );
 kerningLTR = {
@@ -64915,6 +65204,10 @@ language = dflt;
 value = "LEM Pro";
 }
 );
+},
+{
+key = versionString;
+value = "Version %d.%03d";
 }
 );
 settings = {
