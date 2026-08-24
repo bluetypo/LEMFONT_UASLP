@@ -32,6 +32,11 @@ La familia compilada en producción en `builds/otf/release/` se compone de **6 p
   * `onum` — *Oldstyle Figures*
   * `smcp` — *Small Capitals*
 
+## Soporte de Idiomas (Language Support)
+Soporte para más de 100 idiomas de base latina:
+
+> Afrikaans • Albanian • Asu • Basque • Bemba • Bena • Bosnian • Catalan • Cebuano • Chiga • Cornish • Corsican • Croatian • Czech • Dutch • Embu • English • Estonian • Filipino • Finnish • Friulian • Galician • German • Guadeloupean Creole • Gusii • Haitian Creole • Ido • Indonesian • Interlingua • Irish • Iskonawa • Italian • Javanese • Jju • Kabuverdianu • Kalenjin • Kamba • Kikuyu • Kinyarwanda • Lojban • Lower Sorbian • Luo • Luxembourgish • Luyia • Machame • Makhuwa-Meetto • Makonde • Malagasy • Malay • Manx • Māori • Martinican Creole • Meru • Morisyen • Nheengatu • North Ndebele • Northern Sotho • Nyanja • Nyankole • Occitan • Oromo • Polish • Portuguese • Romansh • Rombo • Rundi • Rwa • Samburu • Sango • Sangu • Sardinian • Scottish Gaelic • Sena • Serbian • Shambala • Shipibo-Konibo • Shona • Slovak • Slovenian • Soga • Somali • South Ndebele • Southern Sotho • Spanish • Sundanese • Swahili • Swati • Swedish • Swiss German • Taita • Taroko • Teso • Tsonga • Tswana • Turkish • Turkmen • Upper Sorbian • Vunjo • Welsh • Wolastoqey • Xhosa • Zulu
+
 ## Estado de Producción
 Las **12 instancias estáticas OTF** listas para distribución y producción se ubican en:
 [`builds/otf/release/`](file:///Volumes/Mac%20SSD/GitRepo/LEMFONT_UASLP/builds/otf/release)
