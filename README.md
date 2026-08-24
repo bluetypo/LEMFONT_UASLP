@@ -40,7 +40,7 @@ El archivo fuente master en formato Glyphs (`sources/LEM Pro fam.glyphs`) se enc
 
 ## Sobre el Laboratorio
 El Laboratorio de Experimentación Multimedia (LEM) es un espacio multidisciplinario de la UASLP enfocado en el diseño paramétrico, la percepción visual y la experimentación digital.
-🌐 [Visita el sitio oficial de la Facultad del Hábitat](https://habitat.uaslp.mx)
+🌐 [Visita el sitio oficial del Laboratorio de Experimentación Multimedia](https://lem.uaslp.mx)
 
 ---
 
@@ -51,4 +51,5 @@ El Laboratorio de Experimentación Multimedia (LEM) es un espacio multidisciplin
 
 ## Licencia
 Esta tipografía se distribuye bajo la licencia abierta **SIL Open Font License 1.1** detallada en el archivo [LICENSE.txt](file:///Volumes/Mac%20SSD/GitRepo/LEMFONT_UASLP/LICENSE.txt).
+
 
