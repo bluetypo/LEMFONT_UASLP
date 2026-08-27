@@ -7,22 +7,24 @@
 Este repositorio aloja los archivos fuente de diseño y las compilaciones de producción de la familia, estructurados bajo estándares profesionales de desarrollo tipográfico y control de versiones.
 
 ## Estructura de la Familia (12 Estilos - Release)
-La familia compilada en producción en `builds/otf/release/` se compone de **6 pesos** con sus correspondientes variantes **Upright** (Romana) e **Italic** (Cursiva), sumando un total de **12 instancias estáticas OTF**:
+La familia compilada en producción se compone de **6 pesos** con sus correspondientes variantes **Upright** (Romana) e **Italic** (Cursiva), sumando un total de **12 instancias estáticas** disponibles en formatos **OTF** (Desktop) y **WOFF** (Webfonts):
 
-| Estilo / Instancia | Upright | Italic | Weight Class | Archivo OTF | PostScript Name |
+| Estilo / Instancia | Upright | Italic | Weight Class | Archivos (OTF / WOFF) | PostScript Name |
 | :--- | :---: | :---: | :---: | :--- | :--- |
-| **Light** | ✓ | ✓ | 300 | `LEMProLight.otf` / `LEMProLightItalic.otf` | `LEMProLight` / `LEMProLightItalic` |
-| **Regular** | ✓ | ✓ | 400 | `LEMProRegular.otf` / `LEMProRegularItalic.otf` | `LEMProRegular` / `LEMProRegularItalic` |
-| **Medium** | ✓ | ✓ | 500 | `LEMProMedium.otf` / `LEMProMediumItalic.otf` | `LEMProMedium` / `LEMProMediumItalic` |
-| **SemiBold** | ✓ | ✓ | 600 | `LEMProSemiBold.otf` / `LEMProSemiBoldItalic.otf` | `LEMProSemiBold` / `LEMProSemiBoldItalic` |
-| **Bold** | ✓ | ✓ | 700 | `LEMProBold.otf` / `LEMProBoldItalic.otf` | `LEMProBold` / `LEMProBoldItalic` |
-| **ExtraBold** | ✓ | ✓ | 800 | `LEMProExtraBold.otf` / `LEMProExtraBoldItalic.otf` | `LEMProExtraBold` / `LEMProExtraBoldItalic` |
+| **Light** | ✓ | ✓ | 300 | `LEMProLight.otf` / `.woff`<br>`LEMProLightItalic.otf` / `.woff` | `LEMProLight`<br>`LEMProLightItalic` |
+| **Regular** | ✓ | ✓ | 400 | `LEMProRegular.otf` / `.woff`<br>`LEMProRegularItalic.otf` / `.woff` | `LEMProRegular`<br>`LEMProRegularItalic` |
+| **Medium** | ✓ | ✓ | 500 | `LEMProMedium.otf` / `.woff`<br>`LEMProMediumItalic.otf` / `.woff` | `LEMProMedium`<br>`LEMProMediumItalic` |
+| **SemiBold** | ✓ | ✓ | 600 | `LEMProSemiBold.otf` / `.woff`<br>`LEMProSemiBoldItalic.otf` / `.woff` | `LEMProSemiBold`<br>`LEMProSemiBoldItalic` |
+| **Bold** | ✓ | ✓ | 700 | `LEMProBold.otf` / `.woff`<br>`LEMProBoldItalic.otf` / `.woff` | `LEMProBold`<br>`LEMProBoldItalic` |
+| **ExtraBold** | ✓ | ✓ | 800 | `LEMProExtraBold.otf` / `.woff`<br>`LEMProExtraBoldItalic.otf` / `.woff` | `LEMProExtraBold`<br>`LEMProExtraBoldItalic` |
 
 ## Especificaciones Técnicas (Font Specs)
-* **Formato:** OpenType CFF (OTF) compilado con curvas PostScript (cúbicas).
-* **Ubicación de Release:** `builds/otf/release/`
+* **Formatos de Distribución:**
+  * **Desktop / Print:** OpenType CFF (`.otf`) compilado con curvas PostScript (cúbicas).
+  * **Webfonts:** Web Open Font Format (`.woff`) optimizado para bajo peso de transferencia y renderizado en navegadores web.
+* **Ubicación de Compilación y Release:** `builds/otf/release/` y `builds/otf/proof/`
 * **Unidades por Em (UPM):** 1024.
-* **Set de Glifos por Archivo OTF:** 470 glifos (cobertura Latin extendida con diacríticos, versalitas, figuras numéricas tabulares y elzevirianas, y ligaduras). *Nota: El archivo de diseño fuente master en `sources/` cuenta con 954 glifos.*
+* **Set de Glifos por Archivo:** 470 glifos (cobertura Latin extendida con diacríticos, versalitas, figuras numéricas tabulares y elzevirianas, y ligaduras). *Nota: El archivo de diseño fuente master en `sources/` cuenta con 954 glifos.*
 * **OpenType Features (GSUB):** 
   * `aalt` — *Access All Alternates*
   * `c2sc` — *Capitals to Small Caps*
@@ -40,8 +42,9 @@ Soporte para más de 100 idiomas de base latina:
 > Afrikaans • Albanian • Asu • Basque • Bemba • Bena • Bosnian • Catalan • Cebuano • Chiga • Cornish • Corsican • Croatian • Czech • Dutch • Embu • English • Estonian • Filipino • Finnish • Friulian • Galician • German • Guadeloupean Creole • Gusii • Haitian Creole • Ido • Indonesian • Interlingua • Irish • Iskonawa • Italian • Javanese • Jju • Kabuverdianu • Kalenjin • Kamba • Kikuyu • Kinyarwanda • Lojban • Lower Sorbian • Luo • Luxembourgish • Luyia • Machame • Makhuwa-Meetto • Makonde • Malagasy • Malay • Manx • Māori • Martinican Creole • Meru • Morisyen • Nheengatu • North Ndebele • Northern Sotho • Nyanja • Nyankole • Occitan • Oromo • Polish • Portuguese • Romansh • Rombo • Rundi • Rwa • Samburu • Sango • Sangu • Sardinian • Scottish Gaelic • Sena • Serbian • Shambala • Shipibo-Konibo • Shona • Slovak • Slovenian • Soga • Somali • South Ndebele • Southern Sotho • Spanish • Sundanese • Swahili • Swati • Swedish • Swiss German • Taita • Taroko • Teso • Tsonga • Tswana • Turkish • Turkmen • Upper Sorbian • Vunjo • Welsh • Wolastoqey • Xhosa • Zulu
 
 ## Estado de Producción
-Las **12 instancias estáticas OTF** listas para distribución y producción se ubican en:
-[`builds/otf/release/`](file:///Volumes/Mac%20SSD/GitRepo/LEMFONT_UASLP/builds/otf/release)
+Las **12 instancias estáticas** en formatos **OTF** y **WOFF** listas para distribución se ubican en:
+* [`builds/release/`](builds/release/) — Paquetes oficiales de distribución (`LEMPro_OTF.zip` y `LEMPro_WOFF.zip`), limpios de archivos de sistema e incluyendo el archivo `EULA.txt`.
+* [`builds/otf/proof/`](builds/otf/proof/) — Archivos binarios individuales `.otf` y `.woff`.
 
 El archivo fuente master en formato Glyphs (`sources/LEM Pro fam.glyphs`) se encuentra estructurado para facilitar el mantenimiento y la compilación de fuentes variables (Variable Fonts).
 
@@ -52,11 +55,12 @@ El Laboratorio de Experimentación Multimedia (LEM) es un espacio multidisciplin
 ---
 
 ## Pruebas de Rendering y QA
-1. Descarga las fuentes compiladas desde [`builds/otf/release/`](file:///Volumes/Mac%20SSD/GitRepo/LEMFONT_UASLP/builds/otf/release).
-2. Instala los estilos en tu sistema operativo o gestor de fuentes.
-3. Para validar la vinculación de estilos (*Style Linking*), comprueba que las variantes responda correctamente a los atajos de teclado (**B** / **N** para negritas y **I** / **K** para itálicas) cuando se seleccionan los estilos base en software compatible.
+1. Descarga las fuentes compiladas desde [`builds/otf/release/`](builds/otf/release/) o [`builds/otf/proof/`](builds/otf/proof/).
+2. **Fuentes Desktop (OTF):** Instala los archivos `.otf` en tu sistema operativo o gestor de fuentes y valida la vinculación de estilos (*Style Linking*) con los atajos de teclado (**B** / **N** para negritas y **I** / **K** para itálicas).
+3. **Fuentes Web (WOFF):** Comprueba el renderizado web e incrustación con `@font-face` en navegadores y herramientas de inspección como *Font Gauntlet*.
 
-## Licencia
-Esta tipografía se distribuye bajo la licencia abierta **SIL Open Font License 1.1** detallada en el archivo [LICENSE.txt](file:///Volumes/Mac%20SSD/GitRepo/LEMFONT_UASLP/LICENSE.txt).
+## Licencia y EULA
+Esta tipografía se distribuye bajo la licencia abierta **SIL Open Font License 1.1** detallada en el archivo [LICENSE.txt](LICENSE.txt). Puedes consultar los términos de uso y derechos de distribución en el [Acuerdo de Licencia de Usuario Final (EULA.md)](EULA.md).
+
 
 
