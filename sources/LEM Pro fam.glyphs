@@ -1,9 +1,10 @@
 {
-.appVersion = "3436";
+.appVersion = "4004";
 .formatVersion = 3;
 DisplayStrings = (
 "uaµ",
-E
+"BEÁĂÂÄȦ
+ÀĀĄÅÃČÓ"
 );
 axes = (
 {
@@ -510,7 +511,7 @@ wght = {
 };
 }
 );
-date = "2026-08-22 16:03:08 +0000";
+date = "2026-08-27 16:49:58 +0000";
 familyName = "LEM Pro";
 featurePrefixes = (
 {
@@ -523,7 +524,6 @@ languagesystem latn CRT;
 languagesystem latn KAZ;
 languagesystem latn TAT;
 languagesystem latn TRK;
-languagesystem latn NLD;
 ";
 name = Languagesystems;
 }
@@ -554,25 +554,11 @@ tag = ccmp;
 {
 automatic = 1;
 code = "script latn;
-language AZE;
-lookup locl_latn_0 {
-	sub i by idotaccent;
-} locl_latn_0;
-language CRT;
-lookup locl_latn_0;
-language KAZ;
-lookup locl_latn_0;
-language TAT;
-lookup locl_latn_0;
-language TRK;
-lookup locl_latn_0;
 
-script latn;
-language NLD;
-lookup locl_latn_1 {
-	sub iacute j' by jacute;
-	sub Iacute J' by Jacute;
-} locl_latn_1;
+language AZE CRT KAZ TAT TRK;
+lookup idotaccent {
+	sub i by idotaccent;
+} idotaccent;
 ";
 tag = locl;
 },
@@ -12788,7 +12774,7 @@ unicode = 195;
 },
 {
 glyphname = B;
-lastChange = "2026-08-22 15:15:50 +0000";
+lastChange = "2026-08-27 16:43:19 +0000";
 layers = (
 {
 layerId = "81A831B5-50AA-4849-970C-E043D56D8FCB";
@@ -12807,24 +12793,24 @@ closed = 1;
 nodes = (
 (179,696,l),
 (231,696,o),
-(301,697,o),
-(353,697,cs),
-(494,697,o),
-(549,656,o),
-(549,549,cs),
-(549,482,o),
-(468,438,o),
+(308,697,o),
+(381,697,cs),
+(493,697,o),
+(549,659,o),
+(549,581,cs),
+(549,485,o),
+(482,438,o),
 (346,438,cs),
 (179,438,l),
 (179,409,l),
 (378,409,ls),
-(526,409,o),
-(625,467,o),
-(625,554,cs),
-(625,698,o),
-(548,754,o),
-(350,754,cs),
-(299,754,o),
+(543,409,o),
+(625,466,o),
+(625,581,cs),
+(625,697,o),
+(544,754,o),
+(381,754,cs),
+(306,754,o),
 (231,753,o),
 (179,753,c)
 );
@@ -12834,11 +12820,11 @@ closed = 1;
 nodes = (
 (179,383,l),
 (401,383,ls),
-(530,383,o),
-(616,321,o),
-(616,227,cs),
-(616,105,o),
-(555,57,o),
+(545,383,o),
+(616,325,o),
+(616,209,cs),
+(616,107,o),
+(544,57,o),
 (399,57,cs),
 (333,57,o),
 (245,57,o),
@@ -12847,11 +12833,11 @@ nodes = (
 (252,1,o),
 (348,0,o),
 (420,0,cs),
-(618,0,o),
-(695,61,o),
-(695,219,cs),
-(695,342,o),
-(597,424,o),
+(604,0,o),
+(695,69,o),
+(695,209,cs),
+(695,353,o),
+(614,424,o),
 (450,424,cs),
 (179,424,l)
 );
@@ -12878,20 +12864,20 @@ nodes = (
 (261,654,o),
 (315,654,o),
 (356,654,cs),
-(455,654,o),
-(493,624,o),
-(493,546,cs),
-(493,491,o),
-(427,455,o),
+(451,654,o),
+(493,627,o),
+(493,565,cs),
+(493,488,o),
+(443,455,o),
 (328,455,cs),
 (221,455,l),
 (221,403,l),
 (385,403,ls),
-(529,403,o),
-(625,464,o),
-(625,555,cs),
-(625,698,o),
-(548,754,o),
+(552,403,o),
+(625,455,o),
+(625,574,cs),
+(625,699,o),
+(541,754,o),
 (350,754,cs),
 (312,754,o),
 (260,753,o),
@@ -12903,11 +12889,11 @@ closed = 1;
 nodes = (
 (221,358,l),
 (366,358,ls),
-(481,358,o),
-(558,308,o),
+(500,358,o),
+(558,320,o),
 (558,232,cs),
-(558,137,o),
-(509,100,o),
+(558,140,o),
+(505,100,o),
 (384,100,cs),
 (335,100,o),
 (269,100,o),
@@ -12916,11 +12902,11 @@ nodes = (
 (281,1,o),
 (361,0,o),
 (421,0,cs),
-(619,0,o),
-(696,61,o),
+(612,0,o),
+(696,66,o),
 (696,218,cs),
-(696,345,o),
-(598,430,o),
+(696,365,o),
+(621,430,o),
 (451,430,cs),
 (221,430,l)
 );
@@ -44668,7 +44654,7 @@ unicode = 775;
 },
 {
 glyphname = gravecomb;
-lastChange = "2026-08-22 15:15:50 +0000";
+lastChange = "2026-08-27 16:38:24 +0000";
 layers = (
 {
 anchors = (
@@ -44686,10 +44672,10 @@ shapes = (
 {
 closed = 1;
 nodes = (
+(392,851,l),
 (336,984,l),
 (272,984,l),
-(347,851,l),
-(392,851,l)
+(347,851,l)
 );
 }
 );
@@ -44777,7 +44763,7 @@ unicode = 768;
 },
 {
 glyphname = acutecomb;
-lastChange = "2026-08-22 15:15:50 +0000";
+lastChange = "2026-08-27 16:37:23 +0000";
 layers = (
 {
 anchors = (
@@ -44820,10 +44806,10 @@ shapes = (
 {
 closed = 1;
 nodes = (
+(406,834,l),
 (495,984,l),
 (389,984,l),
-(332,834,l),
-(406,834,l)
+(332,834,l)
 );
 }
 );
@@ -65224,5 +65210,5 @@ name = "Stem 2";
 );
 unitsPerEm = 1024;
 versionMajor = 1;
-versionMinor = 4;
+versionMinor = 5;
 }
