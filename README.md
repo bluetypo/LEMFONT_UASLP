@@ -1,5 +1,7 @@
 # LEM Pro — Repositorio Tipográfico
 
+![LEM Pro Specimen](assets/LEMpro.png)
+
 **LEM Pro** es la familia tipográfica oficial del **Laboratorio de Experimentación Multimedia (LEM)**, perteneciente a la Facultad del Hábitat de la Universidad Autónoma de San Luis Potosí (UASLP).
 
 Este repositorio aloja los archivos fuente de diseño y las compilaciones de producción de la familia, estructurados bajo estándares profesionales de desarrollo tipográfico y control de versiones.
