@@ -1,4 +1,4 @@
-# LEM Pro — Repositorio Tipográfico
+# LEM Pro 
 
 ![LEM Pro Specimen](assets/LEMpro.png)
 
@@ -22,7 +22,7 @@ La familia compilada en producción se compone de **6 pesos** con sus correspond
 * **Formatos de Distribución:**
   * **Desktop / Print:** OpenType CFF (`.otf`) compilado con curvas PostScript (cúbicas).
   * **Webfonts:** Web Open Font Format (`.woff`) optimizado para bajo peso de transferencia y renderizado en navegadores web.
-* **Ubicación de Compilación y Release:** `builds/otf/release/` y `builds/otf/proof/`
+* **Ubicación de Compilación y Release:** `builds/release/` (paquetes `.zip`), `builds/otf/proof/` (`.otf`) y `builds/woff/proof/` (`.woff`).
 * **Unidades por Em (UPM):** 1024.
 * **Set de Glifos por Archivo:** 470 glifos (cobertura Latin extendida con diacríticos, versalitas, figuras numéricas tabulares y elzevirianas, y ligaduras). *Nota: El archivo de diseño fuente master en `sources/` cuenta con 954 glifos.*
 * **OpenType Features (GSUB):** 
@@ -43,8 +43,9 @@ Soporte para más de 100 idiomas de base latina:
 
 ## Estado de Producción
 Las **12 instancias estáticas** en formatos **OTF** y **WOFF** listas para distribución se ubican en:
-* [`builds/release/`](builds/release/) — Paquetes oficiales de distribución (`LEMPro_OTF.zip` y `LEMPro_WOFF.zip`), limpios de archivos de sistema e incluyendo el archivo `EULA.txt`.
-* [`builds/otf/proof/`](builds/otf/proof/) — Archivos binarios individuales `.otf` y `.woff`.
+* [`builds/release/`](builds/release/) — Paquetes oficiales de distribución (`LEMPro_OTF.zip` y `LEMPro_WOFF.zip`), incluyendo el archivo `EULA.txt`.
+* [`builds/otf/proof/`](builds/otf/proof/) — Archivos binarios individuales `.otf`.
+* [`builds/woff/proof/`](builds/woff/proof/) — Archivos binarios individuales `.woff`.
 
 El archivo fuente master en formato Glyphs (`sources/LEM Pro fam.glyphs`) se encuentra estructurado para facilitar el mantenimiento y la compilación de fuentes variables (Variable Fonts).
 
@@ -55,7 +56,7 @@ El Laboratorio de Experimentación Multimedia (LEM) es un espacio multidisciplin
 ---
 
 ## Pruebas de Rendering y QA
-1. Descarga las fuentes compiladas desde [`builds/otf/release/`](builds/otf/release/) o [`builds/otf/proof/`](builds/otf/proof/).
+1. Descarga las fuentes compiladas desde [`builds/release/`](builds/release/) o explora las versiones individuales en [`builds/otf/proof/`](builds/otf/proof/) o [`builds/woff/proof/`](builds/woff/proof/).
 2. **Fuentes Desktop (OTF):** Instala los archivos `.otf` en tu sistema operativo o gestor de fuentes y valida la vinculación de estilos (*Style Linking*) con los atajos de teclado (**B** / **N** para negritas y **I** / **K** para itálicas).
 3. **Fuentes Web (WOFF):** Comprueba el renderizado web e incrustación con `@font-face` en navegadores y herramientas de inspección como *Font Gauntlet*.
 

@@ -4,10 +4,10 @@ Este archivo documenta la hoja de ruta (*roadmap*), lanzamientos de producción 
 
 ---
 
-## [v1.0.0] - 2026-08-21 (Actual)
+## [v1.1.0] - 2026-08-27 (Actual)
 **Estado:** Estable / Compilación de Producción
 **Estilos:** Light, Regular, Medium, SemiBold, Bold, ExtraBold (con variantes Upright e Italic, 12 estilos en total).
-**Enfoque:** Lanzamiento completo de la familia estática OTF en `builds/otf/release/`.
+**Enfoque:** Lanzamiento completo de la familia en formatos OTF y WOFF empaquetados en `builds/release/`.
 
 ### Hitos Técnicos:
 - Compilación e integración de 12 estilos estáticos en formato OTF (6 pesos en versiones Upright e Italic).

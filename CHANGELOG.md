@@ -6,12 +6,13 @@ Todos los cambios técnicos relevantes del desarrollo y compilación de la famil
 
 ## [1.1.0] - 2026-08-27
 ### Added
-- **Formatos Web (WOFF):** Compilación e incorporación de los archivos de fuentes web (`.woff`) para las 12 variantes de la familia en `builds/otf/proof/` (`Light`, `Regular`, `Medium`, `SemiBold`, `Bold`, `ExtraBold` tanto en *Upright* como en *Italic*).
+- **Formatos Web (WOFF):** Compilación e incorporación de los archivos de fuentes web (`.woff`) para las 12 variantes de la familia en `builds/woff/proof/` (`Light`, `Regular`, `Medium`, `SemiBold`, `Bold`, `ExtraBold` tanto en *Upright* como en *Italic*).
+- **Paquetes de Liberación Limpios (.zip):** Generación de los paquetes de distribución `LEMPro_OTF.zip` y `LEMPro_WOFF.zip` en `builds/release/` incluyendo el archivo `EULA.txt` y libres de metadatos de macOS (`.DS_Store`, `__MACOSX`).
 - **Acuerdo de Licencia de Usuario Final (EULA):** Creación de `EULA.md` (bilingüe: Español / English), especificando las libertades de uso de escritorio, webfonts, incrustación en apps/documentos, y la protección del Nombre Reservado (*Reserved Font Name*).
 - **Espécimen Tipográfico:** Adición del espécimen visual oficial de la familia en `assets/LEMpro.png` e integración en el `README.md`.
 
 ### Changed
-- **README y Documentación:** Actualización de las especificaciones técnicas para distribución dual (OTF + WOFF), ajuste de tablas de instancias y normalización de enlaces relativos en el repositorio.
+- **README y Documentación:** Actualización de las especificaciones técnicas para distribución dual (OTF + WOFF), ajuste de la estructura del directorio `builds/` (`release/`, `otf/proof/`, `woff/proof/`) y normalización de enlaces relativos en el repositorio.
 
 ---
 
