@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEM Pro — Familia tipográfica del Laboratorio de Experimentación Multimedia · UASLP</title>
+<meta name="description" content="Descarga gratuita de LEM Pro, familia tipográfica oficial del Laboratorio de Experimentación Multimedia (LEM), Facultad del Hábitat, UASLP. 12 estilos en OTF y WOFF. Licencia SIL OFL 1.1.">
+<style>
+  /* Las 12 fuentes se cargan desde el propio repositorio (rutas relativas) */
+  @font-face { font-family: "LEM Pro"; font-weight: 300; font-style: normal; src: url("builds/woff/proof/LEMProLight.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 300; font-style: italic; src: url("builds/woff/proof/LEMProLightItalic.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 400; font-style: normal; src: url("builds/woff/proof/LEMProRegular.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 400; font-style: italic; src: url("builds/woff/proof/LEMProRegularItalic.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 500; font-style: normal; src: url("builds/woff/proof/LEMProMedium.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 500; font-style: italic; src: url("builds/woff/proof/LEMProMediumItalic.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 600; font-style: normal; src: url("builds/woff/proof/LEMProSemiBold.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 600; font-style: italic; src: url("builds/woff/proof/LEMProSemiBoldItalic.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 700; font-style: normal; src: url("builds/woff/proof/LEMProBold.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 700; font-style: italic; src: url("builds/woff/proof/LEMProBoldItalic.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 800; font-style: normal; src: url("builds/woff/proof/LEMProExtraBold.woff") format("woff"); font-display: swap; }
+  @font-face { font-family: "LEM Pro"; font-weight: 800; font-style: italic; src: url("builds/woff/proof/LEMProExtraBoldItalic.woff") format("woff"); font-display: swap; }
+
+  :root {
+    --paper: #ffffff;
+    --ink: #0d0d0d;
+    --muted: #6b6b6b;
+    --line: #e2e2e2;
+    --soft: #f4f4f4;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "LEM Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-weight: 400; font-size: 18px; line-height: 1.55;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+  a { color: inherit; }
+
+  header.top {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    padding: 20px 0; border-bottom: 1px solid var(--line);
+    font-size: 15px; color: var(--muted);
+  }
+  header.top a { text-decoration: none; }
+  header.top a:hover { color: var(--ink); }
+
+  /* Portada */
+  .hero { padding: 64px 0 56px; }
+  .hero h1 {
+    font-weight: 800; font-size: clamp(80px, 16vw, 210px);
+    line-height: .88; letter-spacing: -.02em; margin: 0 0 28px;
+  }
+  .hero h1 span { font-weight: 300; }
+  .hero .lead { font-size: clamp(20px, 2.2vw, 26px); font-weight: 300; max-width: 720px; margin: 0 0 40px; line-height: 1.4; }
+
+  .downloads { display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
+  .btn {
+    display: flex; flex-direction: column; justify-content: center;
+    min-width: 260px; padding: 18px 28px; border-radius: 14px;
+    text-decoration: none; transition: transform .15s ease, background .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .btn .t { font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .btn .t svg { width: 20px; height: 20px; flex: none; }
+  .btn .s { font-size: 14px; margin-top: 4px; }
+  .btn.primary { background: var(--ink); color: #fff; }
+  .btn.primary .s { color: #bdbdbd; }
+  .btn.secondary { background: var(--soft); color: var(--ink); border: 1px solid var(--line); }
+  .btn.secondary:hover { background: #ececec; }
+  .btn.secondary .s { color: var(--muted); }
+  .release-meta { font-size: 14px; color: var(--muted); margin-top: 16px; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  section > h2 {
+    font-size: 14px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; margin: 0 0 32px;
+  }
+
+  /* Estilos */
+  .styles { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+  @media (max-width: 760px) { .styles { grid-template-columns: 1fr; } }
+  .style-row {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    padding: 12px 0; border-bottom: 1px solid var(--line);
+  }
+  .style-row .sample { font-size: clamp(30px, 3.6vw, 44px); line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .style-row .w { font-size: 13px; color: var(--muted); font-weight: 400; font-style: normal; white-space: nowrap; }
+
+  /* Probador */
+  .tester-controls { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; margin-bottom: 18px; font-size: 15px; }
+  .tester-controls label { display: flex; align-items: center; gap: 10px; }
+  .tester-controls select, .tester-controls input[type=range] { font: inherit; }
+  .tester-controls select { padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .tester {
+    width: 100%; min-height: 1.3em; padding: 18px 22px;
+    border: 1px solid var(--line); border-radius: 14px; background: var(--soft);
+    font-family: "LEM Pro", sans-serif; font-size: 64px; line-height: 1.15; outline: none;
+    word-break: break-word;
+  }
+  .tester:focus { border-color: var(--ink); }
+
+  /* Muestra de texto */
+  .display-lines p { margin: 0; line-height: 1.05; }
+  .display-lines .l1 { font-weight: 300; font-size: clamp(44px, 8vw, 104px); }
+  .display-lines .l2 { font-weight: 800; font-size: clamp(44px, 8vw, 104px); }
+  .display-lines .l3 { font-weight: 400; font-style: italic; font-size: clamp(36px, 6vw, 76px); margin-top: 10px; }
+  .textblock { margin-top: 48px; }
+  .tb-label { font-size: 13px; letter-spacing: .06em; color: var(--muted); margin: 0 0 14px; }
+  .tb-text {
+    font-size: 18pt; line-height: 27pt; margin: 0;
+    column-count: 2; column-gap: 44px; hyphens: auto;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+  @media (max-width: 680px) { .tb-text { column-count: 1; font-size: 15pt; line-height: 22.5pt; } }
+
+  /* OpenType */
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .feat { border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .feat code { font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: var(--muted); }
+  .feat .demo { font-size: 34px; line-height: 1.25; margin-top: 8px; }
+
+  /* Instalación */
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .step { background: var(--soft); border-radius: 14px; padding: 24px; }
+  .step .n { font-size: 44px; font-weight: 800; line-height: 1; }
+  .step b { display: block; margin: 10px 0 4px; font-weight: 700; }
+  .step p { margin: 0; font-size: 16px; color: #333; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+  @media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+  .two p { margin: 0 0 14px; }
+
+  /* Pie con logotipos */
+  footer { border-top: 1px solid var(--line); padding: 44px 0 56px; }
+  .logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; }
+  .logos .inst { height: 120px; width: auto; max-width: 100%; }
+  .logos .tipomx img { height: 96px; width: auto; display: block; }
+  footer .fine { font-size: 14px; color: var(--muted); margin-top: 32px; }
+  @media (max-width: 680px) { .logos .inst { height: auto; width: 100%; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <span>Laboratorio de Experimentación Multimedia · Facultad del Hábitat · UASLP</span>
+      <a href="https://github.com/bluetypo/LEMFONT_UASLP">Código fuente en GitHub ↗</a>
+    </header>
+
+    <div class="hero">
+      <h1>LEM <span>Pro</span></h1>
+      <p class="lead">Familia tipográfica oficial del Laboratorio de Experimentación Multimedia. Seis pesos con sus cursivas, versalitas, cifras elzevirianas y soporte para más de 100 idiomas de base latina. Gratuita para uso personal, académico y comercial.</p>
+
+      <div class="downloads">
+        <a id="dl-otf" class="btn primary" href="https://github.com/bluetypo/LEMFONT_UASLP/releases/latest/download/LEMPro_OTF.zip">
+          <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Descargar para escritorio</span>
+          <span class="s" id="dl-otf-s">OTF · para Mac, Windows, Office, Adobe</span>
+        </a>
+        <a id="dl-woff" class="btn secondary" href="https://github.com/bluetypo/LEMFONT_UASLP/releases/latest/download/LEMPro_WOFF.zip">
+          <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Descargar para web</span>
+          <span class="s" id="dl-woff-s">WOFF · para sitios web con @font-face</span>
+        </a>
+      </div>
+      <p class="release-meta" id="release-meta">Última versión publicada en GitHub</p>
+    </div>
+
+    <section aria-label="Estilos de la familia">
+      <h2>12 estilos</h2>
+      <div class="styles">
+        <div>
+          <div class="style-row"><span class="sample" style="font-weight:300">Light</span><span class="w">300</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:400">Regular</span><span class="w">400</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:500">Medium</span><span class="w">500</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:600">SemiBold</span><span class="w">600</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:700">Bold</span><span class="w">700</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:800">ExtraBold</span><span class="w">800</span></div>
+        </div>
+        <div>
+          <div class="style-row"><span class="sample" style="font-weight:300;font-style:italic">Light Italic</span><span class="w">300</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:400;font-style:italic">Italic</span><span class="w">400</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:500;font-style:italic">Medium Italic</span><span class="w">500</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:600;font-style:italic">SemiBold Italic</span><span class="w">600</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:700;font-style:italic">Bold Italic</span><span class="w">700</span></div>
+          <div class="style-row"><span class="sample" style="font-weight:800;font-style:italic">ExtraBold Italic</span><span class="w">800</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Probador">
+      <h2>Pruébala</h2>
+      <div class="tester-controls">
+        <label>Peso
+          <select id="t-weight">
+            <option value="300">Light</option>
+            <option value="400" selected>Regular</option>
+            <option value="500">Medium</option>
+            <option value="600">SemiBold</option>
+            <option value="700">Bold</option>
+            <option value="800">ExtraBold</option>
+          </select>
+        </label>
+        <label><input type="checkbox" id="t-italic"> Cursiva</label>
+        <label>Tamaño <input type="range" id="t-size" min="18" max="140" value="64"> <span id="t-size-v">64 px</span></label>
+      </div>
+      <div class="tester" id="tester" contenteditable="true" spellcheck="false" aria-label="Escribe un texto para probar la tipografía">Escribe aquí para probar LEM Pro</div>
+    </section>
+
+    <section aria-label="Muestra de texto">
+      <h2>Muestra</h2>
+      <div class="display-lines">
+        <p class="l1">EXPERIMENTACIÓN</p>
+        <p class="l2">MULTIMEDIA</p>
+        <p class="l3">percepción visual &amp; diseño paramétrico</p>
+      </div>
+      <div class="textblock">
+        <p class="tb-label">LEM Pro Regular 18/27</p>
+        <p class="tb-text">El Laboratorio de Experimentación Multimedia es un espacio multidisciplinario de la Facultad del Hábitat dedicado al diseño paramétrico, la percepción visual y la experimentación digital. En sus mesas conviven el código y el boceto, los registros de seguimiento ocular y las pruebas de lectura, los prototipos interactivos y las piezas editoriales. LEM Pro nació de esa práctica: una familia sobria y legible, pensada para rotular datos, interfaces y publicaciones con la misma voz. Sus seis pesos y sus cursivas permiten construir jerarquías claras sin cambiar de familia; las versalitas y las cifras elzevirianas acompañan el texto corrido, mientras que las cifras capitales y tabulares ordenan tablas, tiempos y mediciones. Cada glifo se dibujó para funcionar tanto en pantalla como en papel, desde la nota al pie hasta el cartel de gran formato. La familia se distribuye bajo una licencia abierta para que estudiantes, docentes e investigadores puedan usarla, estudiarla y adaptarla libremente en sus propios proyectos.</p>
+      </div>
+    </section>
+
+    <section aria-label="Funciones OpenType">
+      <h2>Funciones OpenType</h2>
+      <div class="features">
+        <div class="feat"><code>smcp</code> Versalitas<div class="demo" style="font-feature-settings:'smcp' 1">Facultad del Hábitat</div></div>
+        <div class="feat"><code>onum</code> Cifras elzevirianas<div class="demo" style="font-feature-settings:'onum' 1">756,433 ms</div></div>
+        <div class="feat"><code>lnum</code> Cifras capitales<div class="demo" style="font-feature-settings:'lnum' 1">756,433 ms</div></div>
+        <div class="feat"><code>case</code> Formas para mayúsculas<div class="demo" style="font-feature-settings:'case' 1">(LEM)–[UASLP]</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cómo instalarla</h2>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><b>Descarga</b><p>Pulsa «Descargar para escritorio». Se descargará un archivo .zip.</p></div>
+        <div class="step"><span class="n">2</span><b>Descomprime</b><p>Haz doble clic en el .zip para abrir la carpeta con los 12 archivos .otf.</p></div>
+        <div class="step"><span class="n">3</span><b>Instala</b><p><strong>Mac:</strong> selecciona todos los .otf, doble clic e «Instalar». <strong>Windows:</strong> selecciónalos, clic derecho e «Instalar».</p></div>
+        <div class="step"><span class="n">4</span><b>Úsala</b><p>Busca «LEM Pro» en el menú de fuentes de tu programa.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Acerca de la familia</h2>
+      <div class="two">
+        <div>
+          <p>LEM Pro es la familia tipográfica oficial del Laboratorio de Experimentación Multimedia (LEM) de la Facultad del Hábitat, Universidad Autónoma de San Luis Potosí. Cada archivo incluye 470 glifos con cobertura latina extendida, diacríticos, versalitas, cifras tabulares y elzevirianas, y ligaduras.</p>
+          <p>¿Diseñas o programas? Los archivos fuente (.glyphs), la documentación y el historial de versiones están en el <a href="https://github.com/bluetypo/LEMFONT_UASLP">repositorio de GitHub</a>.</p>
+        </div>
+        <div>
+          <p><strong>Licencia:</strong> <a href="https://github.com/bluetypo/LEMFONT_UASLP/blob/main/LICENSE.txt">SIL Open Font License 1.1</a>. Puedes usarla, compartirla y modificarla sin costo; las versiones derivadas deben mantener la misma licencia. Consulta también el <a href="https://github.com/bluetypo/LEMFONT_UASLP/blob/main/EULA.md">acuerdo de licencia (EULA)</a>.</p>
+          <p><strong>Diseño:</strong> Manuel Guerrero Salinas (Bluetypo) · Laboratorio de Experimentación Multimedia, Facultad del Hábitat, UASLP.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logos">
+        <img class="inst" src="assets/uaslp.png" alt="Universidad Autónoma de San Luis Potosí · Facultad del Hábitat · Laboratorio de Experimentación Multimedia">
+        <a class="tipomx" href="https://www.tipomx.org/em/marcamx/" title="Hecho con Tipografía Mexicana">
+          <img src="assets/tipomx.png" alt="Hecho con Tipografía Mexicana">
+        </a>
+      </div>
+      <p class="fine">LEM Pro · Laboratorio de Experimentación Multimedia · Facultad del Hábitat · Universidad Autónoma de San Luis Potosí</p>
+    </footer>
+  </div>
+
+<script>
+  // Probador
+  (function () {
+    const t = document.getElementById("tester");
+    const w = document.getElementById("t-weight");
+    const i = document.getElementById("t-italic");
+    const s = document.getElementById("t-size");
+    const sv = document.getElementById("t-size-v");
+    function apply() {
+      t.style.fontWeight = w.value;
+      t.style.fontStyle = i.checked ? "italic" : "normal";
+      t.style.fontSize = s.value + "px";
+      sv.textContent = s.value + " px";
+    }
+    [w, i, s].forEach(el => el.addEventListener("input", apply));
+    apply();
+  })();
+
+  // Busca el último release y actualiza los botones de descarga
+  (async function () {
+    const repo = "bluetypo/LEMFONT_UASLP";
+    try {
+      const res = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
+        headers: { Accept: "application/vnd.github+json" }
+      });
+      if (!res.ok) throw new Error(res.status);
+      const rel = await res.json();
+      const assets = rel.assets || [];
+      const mb = b => (b / 1048576).toFixed(1).replace(/^0\.0$/, "0.1") + " MB";
+      const pick = key => assets.find(a => a.name.toLowerCase().endsWith(".zip") && a.name.toLowerCase().includes(key));
+      const otf = pick("otf"), woff = pick("woff");
+      if (otf) {
+        const a = document.getElementById("dl-otf");
+        a.href = otf.browser_download_url; a.setAttribute("download", otf.name);
+        document.getElementById("dl-otf-s").textContent = `OTF · ${otf.name} · ${mb(otf.size)}`;
+      }
+      if (woff) {
+        const a = document.getElementById("dl-woff");
+        a.href = woff.browser_download_url; a.setAttribute("download", woff.name);
+        document.getElementById("dl-woff-s").textContent = `WOFF · ${woff.name} · ${mb(woff.size)}`;
+      }
+      const fecha = new Date(rel.published_at).toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" });
+      document.getElementById("release-meta").textContent = `${rel.name || rel.tag_name} · publicada el ${fecha}`;
+    } catch (e) {
+      // Sin conexión a la API: los botones usan el enlace fijo al último release
+    }
+  })();
+</script>
+</body>
+</html>
